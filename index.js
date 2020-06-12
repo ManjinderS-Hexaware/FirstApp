@@ -20,12 +20,11 @@ mongoose.connect(url, {
     process.exit();
 });
 
-
 app.use(express.json())
 
 const methodsRouter=require('./routes/methods')
 app.use('/methods',methodsRouter)
 
 app.listen(port, ()=>{
-    console.log('Server Connected..')
+    console.log('Server Connected on port'+port)
 })
