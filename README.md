@@ -25,13 +25,12 @@ $ npm install dotenv
 ```sh
 "start":"node index.js"
 ```
-Create .env file to store connection string of Database.
-Create .gitignore file to store your files containing sensitive information. 
-6.Declare a port number to run this application locally.
-
-7.Create a resource file (methods.js) containing GET, PUT, PATCH and DELETE methods.
-8.Create a new file (routes.js) to store Database schema.
-9.Run application locally using the command:
+4.Create **.env file** to store connection string of Database.<br>
+5.Create **.gitignore file** to store your files containing sensitive information.<br> 
+6.Declare a port number to run this application locally.<br>
+7.Create a resource file (methods.js) containing GET, PUT, PATCH and DELETE methods.<br>
+8.Create a new file (routes.js) to store Database schema.<br>
+9.Run application locally using the command:<br>
 ```sh
 $ node index.js
 ```
@@ -39,7 +38,7 @@ $ node index.js
 ```sh
 https://localhost:9000/methods
 ```
-Use the above command to GET, PUT, PATCH and DELETE data from database.
+Use the above command to GET, PUT, PATCH and DELETE data from database.<br>
 11.Now push this application to github repository using the following commands:
 ```sh
 $ git init
@@ -48,7 +47,7 @@ $ git add .
 $ git commit -m "App commited"
 $ git push origin master
 ```
-12.Deploy this application on Heroku
+12.Deploy this application on Heroku.<br>
 13.Application server is started on a random port on the cloud using the below mentioned statement
 ```sh
 const port = process.env.PORT || 9000
@@ -56,14 +55,14 @@ const port = process.env.PORT || 9000
 If deploying this app on local system then it will use port number 9000, whereas, while deploying it on cloud it will start on random port assigned by cloud instance.
 
 ### Deploying application on cloud
-1.Click New on the top right corner and select “Create new app” and give it a name.
-2.Once your app is created then open dashboard of it and inside dashboard open Deploy tab.
-3.Select Github as deployment method and select "connect to github" option and provide your github repository.
-4.Once it gets connected to your github repository, enable "Automatic Deploy" option.
-5.Now we need to tell Heroku that our app is Node.js app so for that open Settings tab.
-6.Under the settings tab locate Buildpacks and click "Add buildpack".
-7.Select nodejs from options and save it.
-8.Now locate"Reveal Config Vars" under "Settings tab" and give key and value of your database connection string.  
+1.Click New on the top right corner and select “Create new app” and give it a name.<br>
+2.Once your app is created then open dashboard of it and inside dashboard open **Deploy tab**.<br>
+3.Select Github as deployment method and select "connect to github" option and provide your github repository.<br>
+4.Once it gets connected to your github repository, enable "Automatic Deploy" option.<br>
+5.Now we need to tell Heroku that our app is Node.js, so for that open **Settings tab**.<br>
+6.Under the settings tab locate Buildpacks and click "Add buildpack".<br>
+7.Select nodejs from options and save it.<br>
+8.Now locate"Reveal Config Vars" under "Settings tab" and give key and value of your database connection string.<br>  
 9.Go back to "Deploy tab" and select Deploy Branch.
 
 
