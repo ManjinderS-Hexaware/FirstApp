@@ -14,8 +14,8 @@ This application uses MongoDB Database to demonstrate the operations of CRUD(Cre
   - Heroku (to deploy application on cloud)  
 
 # Step by Step Explanation
-1.Install Node.js runtime
-2.Install dependencies in \*package.json file
+1.Install Node.js runtime<br>
+2.Install dependencies in **package.json** file
 ```sh
 $ npm install mongodb
 $ npm install mongoose
@@ -25,8 +25,8 @@ $ npm install dotenv
 ```sh
 "start":"node index.js"
 ```
-4.Create .env file to store connection string of Database.
-5.Create .gitignore file to store your files containing sensitive information. 
+Create .env file to store connection string of Database.
+Create .gitignore file to store your files containing sensitive information. 
 6.Declare a port number to run this application locally.
 
 7.Create a resource file (methods.js) containing GET, PUT, PATCH and DELETE methods.
