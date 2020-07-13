@@ -1,10 +1,11 @@
 const express=require('express')
 const mongoose =require('mongoose')
 const dotenv=require('dotenv')
+const morgan=require('morgan')
 dotenv.config();
 
 const url= process.env.CONNECTION_STRING;
-console.log(url)
+//console.log(url)
 const port=process.env.PORT || 9000;
 
 const app=express()
@@ -26,5 +27,5 @@ const methodsRouter=require('./routes/methods')
 app.use('/methods',methodsRouter)
 
 app.listen(port, ()=>{
-    console.log('Server Connected on port'+port)
+    console.log('Server Connected on port:'+port)
 })

@@ -14,33 +14,33 @@ This application uses MongoDB Database to demonstrate the operations of CRUD(Cre
   - Heroku (to deploy application on cloud)  
 
 # Step by Step Explanation
-1-Install Node.js runtime
-2-Install dependencies in ==package.json== file
+1.Install Node.js runtime
+2.Install dependencies in \*package.json file
 ```sh
 $ npm install mongodb
 $ npm install mongoose
 $ npm install dotenv
 ```
-Change default script to main file i.e, ==index.js==
+3.Change default script to main file i.e, index.js
 ```sh
 "start":"node index.js"
 ```
-3-Create ==.env== file to store connection string of Database.
-4-Create ==.gitignore== file to store your files containing sensitive information. 
-5-Declare a port number to run this application locally.
+4.Create .env file to store connection string of Database.
+5.Create .gitignore file to store your files containing sensitive information. 
+6.Declare a port number to run this application locally.
 
-6-Create a resource file ==(methods.js)== containing GET, PUT, PATCH and DELETE methods.
-7-Create a new file ==(routes.js)== to store Database schema.
-8-Run application locally using the command:
+7.Create a resource file (methods.js) containing GET, PUT, PATCH and DELETE methods.
+8.Create a new file (routes.js) to store Database schema.
+9.Run application locally using the command:
 ```sh
 $ node index.js
 ```
-9-Test your APIs from Postman client.
+10.Test your APIs from Postman client.
 ```sh
 https://localhost:9000/methods
 ```
 Use the above command to GET, PUT, PATCH and DELETE data from database.
-10-Now push this application to github repository using the following commands:
+11.Now push this application to github repository using the following commands:
 ```sh
 $ git init
 $ git remote add origin https://github.com/ManjinderS-Hexaware/FirstApp
@@ -48,23 +48,23 @@ $ git add .
 $ git commit -m "App commited"
 $ git push origin master
 ```
-11-Deploy this application on Heroku
-12- Application server is started on a random port on the cloud using the below mentioned statement
+12.Deploy this application on Heroku
+13.Application server is started on a random port on the cloud using the below mentioned statement
 ```sh
 const port = process.env.PORT || 9000
 ```
 If deploying this app on local system then it will use port number 9000, whereas, while deploying it on cloud it will start on random port assigned by cloud instance.
 
 ### Deploying application on cloud
-1-Click New on the top right corner and select “Create new app” and give it a name.
-2-Once your app is created then open dashboard of it and inside dashboard open ==Deploy tab==.
-3-Select Github as deployment method and select "connect to github" option and provide your github repository.
-4-Once it gets connected to your github repository, enable "Automatic Deploy" option.
-5- Now we need to tell Heroku that our app is Node.js app so for that open ==Settings tab==.
-6-Under the settings tab locate Buildpacks and click "Add buildpack".
-7-Select ==nodejs== from options and save it.
-8-Now locate"Reveal Config Vars" under "Settings tab" and give ==key== and ==value== of your database connection string.  
-9-Go back to "Deploy tab" and select ==Deploy Branch==.
+1.Click New on the top right corner and select “Create new app” and give it a name.
+2.Once your app is created then open dashboard of it and inside dashboard open Deploy tab.
+3.Select Github as deployment method and select "connect to github" option and provide your github repository.
+4.Once it gets connected to your github repository, enable "Automatic Deploy" option.
+5.Now we need to tell Heroku that our app is Node.js app so for that open Settings tab.
+6.Under the settings tab locate Buildpacks and click "Add buildpack".
+7.Select nodejs from options and save it.
+8.Now locate"Reveal Config Vars" under "Settings tab" and give key and value of your database connection string.  
+9.Go back to "Deploy tab" and select Deploy Branch.
 
 
 
